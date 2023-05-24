@@ -1,0 +1,48 @@
+.theme-selector{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.theme-buttons div{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+    border-radius: 50%;
+}
+
+.mode-toggle{
+    margin-right: auto;
+}
+
+.mode-toggle img{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+
+/*styles for mobile phones: */
+@media only screen and (max-width: 480px) {
+    .theme-selector{
+        padding: 0px 15px;
+        width: 140%;
+    }
+}
+
+
+/*styles for tablet screens */
+@media only screen and (min-width: 480px) and (max-width: 1024px) {    
+    .theme-selector{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .mode-toggle{
+        margin: 0px;
+    }
+}
